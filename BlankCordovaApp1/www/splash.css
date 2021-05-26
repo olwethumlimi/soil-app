@@ -1,0 +1,45 @@
+.splash{
+    font-size: 50px;
+    color:var(--secondary);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: splash 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes splash {
+    from{zoom: 0;}
+    from{zoom: 1.1;}
+}
+ .load-block{
+    
+    height: 40px;
+    width: 40px;
+    /* background-color:var(--secondary); */
+    border-radius: 50%;
+    background-image: linear-gradient(to right ,rgb(0, 195, 255) 10% , rgb(89, 245, 149) 90%) !important;
+
+}
+
+
+.right-block{
+   transform: rotate(180deg);
+}
+
+.bottom-blocks{
+    display: flex;
+    color:  var(--secondary);
+    font-weight: bold;
+}
+
+.bottom-blocks .load-block:nth-child(2){
+    height: 30px;
+    width: 30px;
+}
+.bottom-blocks .load-block:nth-child(3){
+    width: 10px;
+    height: 10px;
+   
+}

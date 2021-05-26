@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="login-otp.css">
+    <link rel="stylesheet" href="splash.css">
+
+    
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="login-container" id="login-page">
+        <div class="top-login">
+            <div class="brand">
+                <div class="bottom-blocks mrb">
+                    <div class="load-block "></div>
+                    <div class="load-block"></div>
+                    <div class="load-block"></div>
+                    <div>soilsci</div>
+                </div>
+            </div>
+            <label class="labels">Enter your phone number</label>
+            <input type="text" class="login-input mrb  phone_input" placeholder="Phone Number">
+            <label class="error"></label>
+
+        </div>
+        <div class="bottom-login next-button" style="display: none;">
+            <button class="login-button" id="login-button-submit">NEXT</button>
+        </div>
+
+        <div class="bottom-login next-disable">
+            <button class="disable-btn">Next</button>
+        </div>
+    </div>
+
+
+    <!-- verify -->
+    <div class="login-container" id="verify-page"   style="display: none;">
+        <div class="top-login">
+            <div class="brand">
+                <div class="bottom-blocks mrb">
+                    <div class="load-block "></div>
+                    <div class="load-block"></div>
+                    <div class="load-block"></div>
+                    <div>soilsci</div>
+                </div>
+            </div>
+            <label class="labels">Enter an OTP,check your sms </label>
+            <input type="text" class="login-input mrb verify-input " placeholder="OTP length is 4">
+            <a href="#" class="change">change contact</a>
+            <label class="verify_error error">
+
+
+        </div>
+        <div class="bottom-login  next-button" style="display: none;">
+            <button class="login-button" id="verify-button-submit">NEXT</button>
+        </div>
+
+        <div class="bottom-login next-disable">
+            <button class="disable-btn">Next</button>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <!-- <script>
+        if (Cookies.get('soil_phone_number') != undefined) {
+            window.location.replace("main.html")
+        }
+    </script> -->
+
+    <script src="config.js"></script>
+    <script src="ourjs/verification.js"></script>
+
+
+
+</body>
+
+</html>

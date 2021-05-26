@@ -1,0 +1,91 @@
+.change{
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    width: 100%;
+}
+.login-container{
+   display: grid;
+   grid-template-columns:repeat(1fr);
+ 
+   align-items: flex-start;
+   justify-self: baseline;
+   height: 100vh;
+   justify-content: space-between;
+   flex-direction: column;
+   display: flex;
+   padding: 10px;
+}
+
+
+.top-login{
+    width: 100%;
+}
+
+.login-container .login-button{
+    grid-row: 1/2;
+}
+.login-button{
+    cursor: pointer;
+    height: 45px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 4px rgb(132, 134, 136);
+    background-image:linear-gradient(90deg,  var(--secondary) 10%,rgb(0, 174, 255) 90%) ;
+    text-transform:uppercase ;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+  
+}
+
+.login-button:focus{
+    box-shadow: 0 0 20px 0.5px rgb(186, 238, 255);
+   
+}
+
+.login-input::placeholder{
+    color: var(--secondary);
+    font-size: 13px;
+}
+
+.bottom-login{
+    position: sticky;
+    width: 100%;
+   
+}
+.login-input{
+    height: 45px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 4px rgb(184, 220, 255);
+    border: solid 1px  var(--secondary);
+    font-size: 16px;
+    border-radius: 5px;
+    outline: 0;
+    padding-left: 10px;
+    color: var(--secondary);
+    font-size: 13px;
+   
+}
+
+.disable-btn{
+    background-image: none !important;
+    background: rgb(109, 170, 165) !important;
+    cursor: not-allowed;
+    height: 45px;
+    width: 100%;
+    border: 0;
+    /* box-shadow: 0 0 4px rgb(132, 134, 136); */
+    text-transform:uppercase ;
+    color: rgb(199, 199, 199);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    
+    
+}

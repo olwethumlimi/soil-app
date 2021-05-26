@@ -1,0 +1,9 @@
+:root{
+    --primary:#6bda41;
+    --secondary:#41d3ae;
+    --erroe:red;
+}
+
+.primary-color{
+    color: var(--primary);
+}
